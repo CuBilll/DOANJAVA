@@ -1,0 +1,46 @@
+Cream
+255 253 208
+White
+255 255 255
+Yellow
+255 255 0
+Orange
+255 165 0
+Black
+0 0 0
+Blue
+0 0 255
+Weak blue
+0 204 153
+Green
+0 128 0
+Gray
+128 128 128
+Rust red
+183 65 14
+Pink
+255 192 203
+Brown
+165 42 42
+Violet
+238 130 238
+Low green
+38 90 38
+Weak green
+0 128 0
+Light gray
+199 193 193
+Brown yellow
+150 150 28
+Red
+255 0 0
+Low red
+201 31 31
+Brown gray
+137 94 94
+Red yellow
+255 129 0
+Green yellow
+202 238 121
+Yellow orange
+253 230 7

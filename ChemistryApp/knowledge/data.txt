@@ -1,0 +1,364 @@
+:-dynamic nguyento/2.
+nguyento('H', 1).
+nguyento('He', 4).
+nguyento('Li', 7).
+nguyento('Be', 9).
+nguyento('B', 11).
+nguyento('C', 12).
+nguyento('N', 14).
+nguyento('O', 16).
+nguyento('F', 19).
+nguyento('Na', 23).
+nguyento('Mg', 24).
+nguyento('Al', 27).
+nguyento('Si', 28).
+nguyento('P', 31).
+nguyento('S', 32).
+nguyento('Cl', 35.5).
+nguyento('K', 39).
+nguyento('Ca', 40).
+nguyento('Cr', 52).
+nguyento('Mn', 55).
+nguyento('Fe', 56).
+nguyento('Ni', 58.7).
+nguyento('Cu', 64).
+nguyento('Zn', 65).
+nguyento('Cd', 112).
+nguyento('Br', 80).
+nguyento('Ag', 108).
+nguyento('Sn', 118.71).
+nguyento('I', 127).
+nguyento('Ba', 137).
+nguyento('Hg', 201).
+nguyento('Pb', 207).
+nguyento('Au', 197).
+:-dynamic kl/1.
+kl('Li').
+kl('Be').
+kl('Na').
+kl('Mg').
+kl('Al').
+kl('K').
+kl('Ca').
+kl('Cr').
+kl('Mn').
+kl('Fe').
+kl('Cu').
+kl('Zn').
+kl('Ag').
+kl('Ba').
+kl('Hg').
+kl('Pb').
+kl('Au').
+kl('Sn').
+kl('Ni').
+:-dynamic klk/1.
+klk('Na').
+klk('K').
+klk('Li').
+:-dynamic klkt/1.
+klkt('Be').
+klkt('Mg').
+klkt('Ca').
+klkt('Ba').
+:-dynamic pk/1.
+pk('B').
+pk('C').
+pk('N').
+pk('O').
+pk('F').
+pk('Si').
+pk('P').
+pk('S').
+pk('Cl').
+pk('Br').
+pk('I').
+:-dynamic anion/4.
+anion('Cl', 'Cl', 1, 35.5).
+anion('Br', 'Br', 1, 80).
+anion('F', 'F', 1, 19).
+anion('I', 'I', 1, 127).
+anion('NO3', 'NO3', 1, 62).
+anion('NO2', 'NO2', 1, 46).
+anion('CO3', 'CO3', 2, 60).
+anion('SO4', 'SO4', 2, 96).
+anion('SO3', 'SO3', 2, 80).
+anion('PO4', 'PO4', 3, 95).
+anion('PO3', 'PO3', 3, 79).
+anion('HPO4', 'HPO4', 2, 96).
+anion('H2PO4', 'H2PO4', 1, 97).
+anion('HSO4', 'HSO4', 1, 97).
+anion('HSO3', 'HSO3', 1, 81).
+anion('HCO3', 'HCO3', 1, 61).
+anion('S_2', 'S', 2, 32).
+anion('SiO3', 'SiO3', 2, 76).
+anion('HPO3', 'HPO3', 2, 80).
+anion('H2PO3', 'H2PO3', 1, 81).
+anion('MnO4_1', 'MnO4', 1, 119).
+anion('MnO4_2', 'MnO4', 2, 119).
+anion('ClO', 'ClO', 1, 51.5).
+anion('BrO', 'BrO', 1, 96).
+anion('ClO3', 'ClO3', 1, 83.5).
+anion('Cr2O7', 'Cr2O7', 2, 216).
+anion('CN', 'CN', 1, 26).
+anion('SeO4', 'SeO4', 2, 143).
+anion('OH', 'OH', 1, 17).
+anion('O', 'O', 2, 16).
+:-dynamic cation/4.
+cation('NH4', 'NH4', 1, 18).
+cation('Ag', 'Ag', 1, 108).
+cation('Ca', 'Ca', 2, 40).
+cation('Ba', 'Ba', 2, 137).
+cation('Cu_2', 'Cu', 2, 64).
+cation('Cu_1', 'Cu', 1, 64).
+cation('Cd', 'Cd', 2, 112).
+cation('Zn', 'Zn', 2, 65).
+cation('K', 'K', 1, 39).
+cation('Na', 'Na', 1, 23).
+cation('Mg', 'Mg', 2, 24).
+cation('Al', 'Al', 3, 27).
+cation('Fe_2', 'Fe', 2, 56).
+cation('Fe_3', 'Fe', 3, 56).
+cation('Li', 'Li', 1, 7).
+cation('Cr', 'Cr', 2, 52).
+cation('Mn', 'Mn', 2, 55).
+cation('Sn', 'Sn', 2, 118.71).
+cation('Pb', 'Pb', 2, 207).
+cation('Hg', 'Hg', 2, 201).
+cation('Au', 'Au', 3, 197).
+cation('H', 'H', 1, 1).
+cation('C_2', 'C', 2, 12).
+cation('C_4', 'C', 4, 12).
+cation('P', 'P', 5, 31).
+cation('S_4', 'S', 4, 32).
+cation('S_6', 'S', 6, 32).
+cation('N_1', 'N', 1, 14).
+cation('N_2', 'N', 2, 14).
+cation('N_3', 'N', 3, 14).
+cation('N_4', 'N', 4, 14).
+cation('N_5', 'N', 5, 14).
+:-dynamic convert/2.
+convert('SO2', 'SO3').
+convert('SO3', 'SO4').
+convert('P2O5', 'PO4').
+convert('CO2', 'CO3').
+:-dynamic dienhoa/3.
+dienhoa('Li', 'Li', 1).
+dienhoa('K', 'K', 2).
+dienhoa('Ba', 'Ba', 3).
+dienhoa('Ca', 'Ca', 3).
+dienhoa('Na', 'Na', 4).
+dienhoa('Mg', 'Mg', 5).
+dienhoa('Al', 'Al', 6).
+dienhoa('Mn', 'Mn', 7).
+dienhoa('Zn', 'Zn', 8).
+dienhoa('Cr', 'Cr', 9).
+dienhoa('Fe_2', 'Fe', 10).
+dienhoa('Ni', 'Ni', 11).
+dienhoa('Sn', 'Sn', 12).
+dienhoa('Pb', 'Pb', 13).
+dienhoa('H', 'H', 14).
+dienhoa('Cu_2', 'Cu', 15).
+dienhoa('Fe_3', 'Fe_2', 16).
+dienhoa('Ag', 'Ag', 17).
+dienhoa('Hg', 'Hg', 18).
+dienhoa('Au', 'Au', 19).
+dienhoa('F', 'F', 20).
+dienhoa('Cl', 'Cl', 21).
+dienhoa('Br', 'Br', 22).
+dienhoa('I', 'I', 23).
+:-dynamic halogen/1.
+halogen('F').
+halogen('Cl').
+halogen('Br').
+halogen('I').
+:-dynamic next/3.
+next('O', 'Fe', 'Fe_2').
+next('O', 'Fe_2', 'Fe_3').
+next('O', 'C', 'C_4').
+next('O', 'C_4', 'C_2').
+next('O', 'S', 'S_4').
+next('O', 'S_4', 'S_6').
+next('O', 'N', 'N_2').
+next('O', 'N_2', 'N_4').
+next('O', 'N_1', 'N_4').
+next('O', 'Cu', 'Cu_1').
+next('O', 'Cu_1', 'Cu_2').
+next('S', 'Fe', 'Fe_2').
+next('S', 'Cu', 'Cu_2').
+:-dynamic dangphantu/1.
+dangphantu('H').
+dangphantu('Br').
+dangphantu('Cl').
+dangphantu('F').
+dangphantu('O').
+dangphantu('I').
+:-dynamic khongtan/2.
+khongtan('AgBr', 'cream').
+khongtan('AgCl', 'white').
+khongtan('AgI', 'yellow').
+khongtan('Ag3PO4', 'yellow').
+khongtan('Ag2Cr2O7', 'orange').
+khongtan('Ag2S', 'black').
+khongtan('Ag2CO3', 'white').
+khongtan('CaCO3', 'white').
+khongtan('Ca3(PO4)2', 'white').
+khongtan('CaSO4', 'white').
+khongtan('CaSO3', 'white').
+khongtan('CaSiO3', 'white').
+khongtan('Cu(OH)2', 'blue').
+khongtan('Cu3(PO4)2', 'blue').
+khongtan('CuCO3', 'green').
+khongtan('CuCr2O7', 'black').
+khongtan('CuS', 'black').
+khongtan('CdS', 'yellow').
+khongtan('ZnCO3', 'white').
+khongtan('Zn(OH)2', 'white').
+khongtan('Zn3(PO4)2', 'white').
+khongtan('ZnCr2O7', 'orange').
+khongtan('ZnS', 'white').
+khongtan('MgCO3', 'white').
+khongtan('Mg(OH)2', 'white').
+khongtan('Mg3(PO4)2', 'white').
+khongtan('Al(OH)3', 'white').
+khongtan('AlPO4', 'white').
+khongtan('Al2(SiO3)3', 'none').
+khongtan('Al2S3', 'yellow').
+khongtan('Fe(OH)2', 'cream').
+khongtan('FeCO3', 'gray').
+khongtan('FeS', 'black').
+khongtan('Fe3(PO4)2', 'none').
+khongtan('Fe(OH)3', 'rust_red').
+khongtan('Fe2S3', 'none').
+khongtan('Fe2(SiO3)3', 'none').
+khongtan('FePO4', 'white').
+khongtan('BaSO3', 'white').
+khongtan('BaSO4', 'white').
+khongtan('BaCO3', 'white').
+khongtan('BaSiO3', 'white').
+khongtan('Ba3(PO4)2', 'white').
+khongtan('BaCr2O7', 'orange').
+khongtan('Pb(OH)2', 'white').
+khongtan('PbS', 'black').
+khongtan('PbSO3', 'white').
+khongtan('PbSO4', 'white').
+khongtan('PbCO3', 'white').
+khongtan('PbPO4', 'white').
+khongtan('Cr(OH)2', 'yellow').
+khongtan('Cr(OH)3', 'green').
+khongtan('HgS', 'black').
+khongtan('HgI2', 'yellow').
+khongtan('MnS', 'pink').
+khongtan('SnS', 'brown').
+khongtan('Sn(OH)2', 'white').
+:-dynamic khongtontai/3.
+khongtontai('AgOH', ['Ag2O', 'H2O']).
+khongtontai('H2SO3', ['SO2', 'H2O']).
+khongtontai('H2CO3', ['CO2', 'H2O']).
+khongtontai('NH4OH', ['NH3', 'H2O']).
+:-dynamic khi/1.
+khi('H2').
+khi('O2').
+khi('Cl2').
+khi('F2').
+khi('NH3').
+khi('CO2').
+khi('CO').
+khi('SO2').
+khi('SO3').
+khi('H2S').
+:-dynamic mau/2.
+mau('AgBr', 'Cream').
+mau('AgCl', 'White').
+mau('AgI', 'Yellow').
+mau('Ag3PO4', 'White').
+mau('Ag2Cr2O7', 'Orange').
+mau('Ag2S', 'Black').
+mau('Ag2CO3', 'White').
+mau('CaCO3', 'White').
+mau('Ca3(PO4)2', 'White').
+mau('CaSO4', 'White').
+mau('CaSO3', 'White').
+mau('CaSiO3', 'White').
+mau('Cu(OH)2', 'Blue').
+mau('Cu3(PO4)2', 'Blue').
+mau('CuCO3', 'Green').
+mau('CuCr2O7', 'Black').
+mau('CuS', 'Black').
+mau('CdS', 'Yellow').
+mau('ZnCO3', 'White').
+mau('Zn(OH)2', 'White').
+mau('Zn3(PO4)2', 'White').
+mau('ZnCr2O7', 'Orange').
+mau('ZnS', 'White').
+mau('MgCO3', 'White').
+mau('Mg(OH)2', 'White').
+mau('Mg3(PO4)2', 'White').
+mau('Al(OH)3', 'White').
+mau('AlPO4', 'White').
+mau('Al2(SiO3)3', 'None').
+mau('Al2S3', 'Yellow').
+mau('Fe(OH)2', 'Cream').
+mau('FeCO3', 'Gray').
+mau('FeS', 'Black').
+mau('Fe3(PO4)2', 'None').
+mau('Fe(OH)3', 'Rust red').
+mau('Fe2S3', 'None').
+mau('Fe2(SiO3)3', 'None').
+mau('FePO4', 'White').
+mau('BaSO3', 'White').
+mau('BaSO4', 'White').
+mau('BaCO3', 'White').
+mau('BaSiO3', 'White').
+mau('Ba3(PO4)2', 'White').
+mau('BaCr2O7', 'Orange').
+mau('Pb(OH)2', 'White').
+mau('PbS', 'Black').
+mau('PbSO3', 'White').
+mau('PbSO4', 'White').
+mau('PbCO3', 'White').
+mau('PbCO3', 'White').
+mau('PbPO4', 'White').
+mau('Cr(OH)2', 'Yellow').
+mau('Cr(OH)3', 'Green').
+mau('HgS', 'Black').
+mau('HgI2', 'Yellow').
+mau('MnS', 'Pink').
+mau('SnS', 'Brown').
+mau('Sn(OH)2', 'White').
+mau('KMnO4', 'Violet').
+mau('K2MnO4', 'Low green').
+mau('NaCl', 'None').
+mau('Ca(OH)2', 'White').
+mau('Al2O3', 'White').
+mau('AlCl3', 'None').
+mau('Al2(SO4)3', 'White').
+mau('Fe', 'Light gray').
+mau('FeCl2', 'Weak green').
+mau('FeCl3', 'Brown yellow').
+mau('FeO', 'Black').
+mau('Fe2O3', 'Red').
+mau('Cu', 'Red').
+mau('Cu(NO3)2', 'Weak blue').
+mau('CuCl2', 'Green').
+mau('CuSO4', 'Weak blue').
+mau('Cu2O', 'Low red').
+mau('CuO', 'Black').
+mau('MnCl2', 'Green').
+mau('MnO2', 'Black').
+mau('Mn(OH)4', 'Brown').
+mau('ZnCl2', 'White').
+mau('Zn3P2', 'Brown gray').
+mau('ZnSO4', 'None').
+mau('Cr2O3', 'Low red').
+mau('CrCl2', 'Low green').
+mau('K2Cr2O7', 'Red orange').
+mau('K2CrO4', 'Yellow orange').
+mau('Ag2CrO4', 'Low red').
+mau('As2S3', 'Yellow').
+mau('Mg(OH)2', 'White').
+mau('PbI2', 'Yellow').
+mau('Hg2I2', 'Green yellow').
+mau('Hg2CrO4', 'Red').
+mau('P2O5', 'White').
+mau('NO','Brown').
